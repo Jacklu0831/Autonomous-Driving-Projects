@@ -105,7 +105,7 @@ A number of autonomous vehicle projects I coded along with the [Udacity Self Dri
  - Deep Learning, Keras, Convolutional Neural Networks, NVIDIA CNN, ImgAug
 
 #### [5 - Extended Kalman Filter](5_extended_kalman_filter)
- - Implement the **extended Kalman filter** in C++. Simulated noisy lidar and noisy radar measurements were used to predict where the vehicle in simulator would be in each timestamp. **Kalman filter** was used to perform **sensor fusion** on the lidar measurements and radar measurements to track the vehicle's position and velocity.
+ - Implement the **extended Kalman filter** in C++. Simulated noisy lidar and noisy radar measurements were used to estimate the vehicle position and velocity. **Kalman filter** was used to perform **sensor fusion** on the lidar measurements and radar measurements to track the vehicle's position and velocity.
  - C++, Kalman Filter, Extended Kalman Filter
  
 <!-- #### [8 - Kidnapped Vehicle](8_kidnapped_vehicle)
