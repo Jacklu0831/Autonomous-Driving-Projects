@@ -39,7 +39,7 @@ I component - "I" stands for integral. It is calculated as the product of i coef
     cd uWebSockets
     git checkout e94b6e1
     ```
-* Simulator. You can download these from the [project intro page](https://github.com/udacity/self-driving-car-sim/releases) in the classroom.
+* Simulator. You can download these from [here](https://github.com/udacity/self-driving-car-sim/releases).
 
 **Basic Build Instructions**
 
