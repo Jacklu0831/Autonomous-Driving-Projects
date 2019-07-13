@@ -116,7 +116,6 @@ A number of autonomous vehicle projects I coded along with the [Udacity Self Dri
 
 # Disclaimers
 
-The git commit history time is quite inaccurate as some projects were already done before this repo existed.\
 Most media files (videos and images) were provided by Udacity.\
-The driving simulators were developed by Udacity.\
+The driving simulators were developed by Udacity.
 
