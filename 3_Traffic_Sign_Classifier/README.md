@@ -1,4 +1,4 @@
-# 3 - Traffic Sign Classifier
+<h1 align="center">Traffic Sign Classifier</h1>
 
 <p align="center">
   <a><img src="result.png" alt=""></a>
