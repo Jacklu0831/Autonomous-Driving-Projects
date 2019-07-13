@@ -10,6 +10,7 @@ Modified the simple convolutional neural network architecture [LeNet](http://yan
 
 ### Pipeline
 
+The source code is written in Jupyter Notebook, please refer to [this](TrafficSignRecognizer.ipynb) for a more graphical presentation of the process.
 - Load a data set of labeled traffic signs
 - Explore the data set to make sure things are loaded correctly
 - Preprocess the images, grayscaling since color does not matter in this context (also normalize)
