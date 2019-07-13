@@ -1,6 +1,8 @@
-# CarND Object Detection Lab
+<h1 align="center">SSD Object Detection</h1>
 
-![alt text](result.gif)
+<p align="center">
+  <a><img src="result.gif" alt=""></a>
+</p>
 
 ### Summary
 
