@@ -23,19 +23,19 @@ Since I used Jupyter Notebook for this project, [this file](Advanced_Lane_Detect
 [image6]: ./assets/example_output.jpg "Output"
 [video1]: ./project_video.mp4 "Video"
 
-#### Use camera calibration matrix and distortion from chessboard images to correct distortion of road images
+#### 1. Use camera calibration matrix and distortion from chessboard images to correct distortion of road images
 ![alt text][image1]
 
-#### Use color transforms, gradients, etc., to create a thresholded binary image
+#### 2. Use color transforms, gradients, etc., to create a thresholded binary image
 ![alt text][image3]
 
-#### Apply a perspective transform to rectify binary image ("birds-eye view")
+#### 3. Apply a perspective transform to rectify binary image ("birds-eye view")
 ![alt text][image4]
 
-#### Detect lane pixels and fit to find the lane boundary
+#### 4. Detect lane pixels and fit to find the lane boundary
 ![alt text][image5]
 
-#### Determine the curvature of the lane and vehicle position with respect to center and warp result back to original image
+#### 5. Determine the curvature of the lane and vehicle position with respect to center and warp result back to original image
 ![alt text][image6]
 
 ### Try it Yourself
