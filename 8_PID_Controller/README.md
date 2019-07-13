@@ -5,7 +5,29 @@ https://medium.com/intro-to-artificial-intelligence/pid-controller-udacitys-self
 
 Deja vu because differentiation coefficient is too high.
 
+# 7 - PID Controller
 
+[INSERT MEDIA]
+
+### Summary
+
+Programmed a basic PID (proportional integral derivative) mechanism to make a car drive itself on a simulated road with curves. This is a model-based approach to behavior cloning, which is a more data-based approach. However, this control loop feedback cycle still does quite well on staying on the lane. The thrust of the vehicle is constant even on curves. To make the turning more "smooth", the MPC (model predictive control) mechanism could be employed going deeper into the model-based approach. 
+
+### Pipeline / Technical Detail
+
+P component - "P stands for proportional. It is calculated as the product of p coefficient and cross track error. It lets the car steer proportionally to the car's distance from the CTE. A bigger P, the quicker for the car to get to target posiiton but the bigger the motional oscillation.
+
+D component - "D" stands for differential. It is calculated as the product of d coefficient different component of CTE. It serves as a way to let the car approach the center line of trajectory without oscillations and excessive jerk.
+
+I component - "I" stands for integral. It is calculated as the product of i coefficient and the sum of all CTE combined. The i coefficient takes a small value (0.0001 in my code) since the integral of cte is relatively large. The proportional control causes a bias over a long period of time and avoid the car to get in the exact trajectorry (systematic bias) and the integral term eliminates it.
+
+### Try it Yourself
+
+
+
+### Success Criteria
+
+The simulated autonomous vehicle has to stay on the lane thoughout the track. 
 
 
 ---
