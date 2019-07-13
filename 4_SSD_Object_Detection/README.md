@@ -30,4 +30,4 @@ root                  *  /usr/local/anaconda3
 Now you can download and open [this file](Object_Detection.ipynb) and play with it on your local machine.
 
 ### Documents
-[An indepth paper on the speed/accuracy trade of object detection algorithms](https://arxiv.org/pdf/1611.10012.pdf)
+[An indepth paper on the speed/accuracy trade-offs of object detection algorithms](https://arxiv.org/pdf/1611.10012.pdf)
