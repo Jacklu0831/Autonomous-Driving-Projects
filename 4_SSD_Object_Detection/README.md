@@ -1,20 +1,12 @@
 # CarND Object Detection Lab
 
-https://arxiv.org/pdf/1611.10012.pdf
+![alt text](result.gif)
 
-![](assets/clip.gif)
+### Summary
 
-In lab this you will:
+I Learned about *MobileNets* and the computational efficiency of separable depthwise convolutions, implemented the SSD (Single Shot Detection) architecture used for object detection, used pretrained TensorFlow object detection inference models to detect objects, and constructed and applied object detection pipeline to a driving video. For more detailed pipeline of this project, the please refer to [this file](Object_Detection.ipynb).
 
-* Learn about *MobileNets* and separable depthwise convolutions.
-* The SSD (Single Shot Detection) architecture used for object detection
-* Use pretrained TensorFlow object detection inference models to detect objects
-* Use different architectures and weigh the tradeoffs.
-* Apply an object detection pipeline to a video.
-
-Open the notebook and work through it!
-
-### Requirements
+### Try it Yourself
 
 Install environment with [Anaconda](https://www.continuum.io/downloads):
 
@@ -33,17 +25,7 @@ carnd-advdl-odlab        /usr/local/anaconda3/envs/carnd-advdl-odlab
 root                  *  /usr/local/anaconda3
 ```
 
-Further documentation on [working with Anaconda environments](https://conda.io/docs/using/envs.html#managing-environments). 
+Now you can download and open [this file](Object_Detection.ipynb) and play with it on your local machine.
 
-Particularly useful sections:
-
-https://conda.io/docs/using/envs.html#change-environments-activate-deactivate
-https://conda.io/docs/using/envs.html#remove-an-environment
-
-### Resources
-
-* TensorFlow object detection [model zoo](https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/detection_model_zoo.md)
-* [Driving video](https://s3-us-west-1.amazonaws.com/udacity-selfdrivingcar/advanced_deep_learning/driving.mp4)
-
-### Tips
-- Some windows users have reported the driving video as playable only in Jupyter Notebook operating in Chrome browser, and not in media player or Jupyter Notebook operating in other browsers.  In contrast the post-segmentation video appears to be operating across players and browsers.
+### Documents
+[An indepth paper on the speed/accuracy trade of object detection algorithms](https://arxiv.org/pdf/1611.10012.pdf)
