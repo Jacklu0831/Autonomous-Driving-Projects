@@ -10,7 +10,7 @@ In this project, my vehicle has been kidnapped. However, with noisy GPS data (in
 
 ### Technical Details
 
-This was the most mathematically heavy and the most interesting project due to having to wrap my head around recursive bayesian estimation and markov chains. With a discrete number of particles (10 used for the gif above) each carrying position and weight measures that updates every prediction/measurement, the algorithms uses the their individual weights to localize the vehicle sequentially by always only using the previous state of the vehicle and particles for predicting the next. [Here](https://medium.com/@jonathan_hui/tracking-a-self-driving-car-with-particle-filter-ef61f622a3e9) is an awesome article that explains the problem in 1D instead.
+This was the most mathematically heavy and the most interesting project due to having to wrap my head around recursive bayesian estimation and markov chains. With a discrete number of particles (10 used for the gif above) each carrying position and weight measures that updates every prediction/measurement, the algorithms uses their individual weights to localize the vehicle sequentially by only using the previous state of the vehicle and particles for predicting the next. [Here](https://medium.com/@jonathan_hui/tracking-a-self-driving-car-with-particle-filter-ef61f622a3e9) is an awesome article that explains the problem in 1D instead for anyone who is interested.
 
 ### Running the Code
 
