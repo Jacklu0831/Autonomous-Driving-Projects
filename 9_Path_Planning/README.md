@@ -16,21 +16,21 @@ Use path planning to program a simulated vehicle that safely navigates around a 
 
 ### Technical Details
 
-**1. Predictions**
+- Predictions\
 This step generates trajectories of all candidate vehicles and choose the one with lowest cost for reference. This is done in a purely model based approach.
 
-**2. Behaviour planner**
+- Behaviour planner\
 This step defines a set of candidate high level targets for the vehicle to follow (lane changes, slow down). Here, the behavior of the vehicle is hard coded due to being sufficient for this challenge. It leaves a 30 gap from the front vehicle, changes lanes when blocks by a slow moving vehicle, and slows down if lane change is not feasible.
 
-**3. Trajectories generation**
+- Trajectories generation\
 for every possible high level targets, a percise path to follow will be computed. This step is done using the spline library function based on xy coordinates. The path generated is ensured to be continuous. The upside of this approach is that it generates accurate path since the xy coordinates are more accurately estimated than the frenet coordinates. However, this approach does not guarantee a minimized sum of third derivative (total jerk). However, this approach does work well with the success criteria of this project and is simple to implement and computationally inexpensive.
 
-**4. Trajectories cost ranking**
+- Trajectories cost ranking\
 for each trajectory a cost will be derived (depending on feasibility, safety, legality, comfort and efficiency) and the trajectory with the lowest cost will be chosen. In this project, the specific cost value components how near the trajectory is from the nearest predicted vehicle, how much time it takes to reach the candidate point, how large is the acceleration and jerk, and a bit on whether we have to change lane. The overall aim of this model is to minimize risk by driving rather conservatively. 
 
 ### Data
 
-**Main car's localization Data (No Noise)**\
+- Main car's localization Data (No Noise)\
 ["x"] The car's x position in map coordinates\
 ["y"] The car's y position in map coordinates\
 ["s"] The car's s position in frenet coordinates\
@@ -38,15 +38,15 @@ for each trajectory a cost will be derived (depending on feasibility, safety, le
 ["yaw"] The car's yaw angle in the map\
 ["speed"] The car's speed in MPH
 
-**Previous path data given to the Planner**\
+- Previous path data given to the Planner\
 ["previous_path_x"] The previous list of x points previously given to the simulator\
 ["previous_path_y"] The previous list of y points previously given to the simulator
 
-**Previous path's end s and d values**\
+- Previous path's end s and d values\
 ["end_path_s"] The previous list's last point's frenet s value\
 ["end_path_d"] The previous list's last point's frenet d value
 
-**Sensor Fusion Data, a list of all other car's attributes on the same side of the road. (No Noise)**\
+- Sensor Fusion Data, a list of all other car's attributes on the same side of the road. (No Noise)\
 ["sensor_fusion"] A 2d vector of cars and then those cars' unique ID, xy position in map coordinates, xy velocity in m/s, and sd position in frenet coordinates. 
 
 ### Try it Yourself
