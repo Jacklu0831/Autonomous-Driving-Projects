@@ -16,17 +16,17 @@ Use path planning to program a simulated vehicle that safely navigates around a 
 
 ### Technical Details
 
-**Predictions**
+**1. Predictions**
 This step generates trajectories of all candidate vehicles and choose the one with lowest cost for reference. This is done in a purely model based approach.
 
-**behaviour planner**
+**2. Behaviour planner**
 This step defines a set of candidate high level targets for the vehicle to follow (lane changes, slow down). Here, the behavior of the vehicle is hard coded due to being sufficient for this challenge. It leaves a 30 gap from the front vehicle, changes lanes when blocks by a slow moving vehicle, and slows down if lane change is not feasible.
 
-**trajectories generation**
+**3. Trajectories generation**
 for every possible high level targets, a percise path to follow will be computed. This step is done using the spline library function based on xy coordinates. The path generated is ensured to be continuous. The upside of this approach is that it generates accurate path since the xy coordinates are more accurately estimated than the frenet coordinates. However, this approach does not guarantee a minimized sum of third derivative (total jerk). However, this approach does work well with the success criteria of this project and is simple to implement and computationally inexpensive.
 
-**trajectories cost ranking**
-for each trajectory a cost will be derived (depending on feasibility, safety, legality, comfort and efficiency) and the trajectory with the lowest cost will be chosen. In this project, the specific cost value components how near the trajectory is from the nearest predicted vehicle, how much time it takes to reach the candidate point, how large is the acceleration and jerk, and a bit on whether we have to change lane. The overall aim of this model is to minimize risk by driving rather conservatively.
+**4. Trajectories cost ranking**
+for each trajectory a cost will be derived (depending on feasibility, safety, legality, comfort and efficiency) and the trajectory with the lowest cost will be chosen. In this project, the specific cost value components how near the trajectory is from the nearest predicted vehicle, how much time it takes to reach the candidate point, how large is the acceleration and jerk, and a bit on whether we have to change lane. The overall aim of this model is to minimize risk by driving rather conservatively. 
 
 ### Data
 
