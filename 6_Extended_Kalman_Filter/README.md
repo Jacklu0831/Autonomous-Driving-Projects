@@ -3,28 +3,32 @@
 ### Summary
 Utilized kalman filter technique to estimate the state of a moving object of interest with noisy lidar and radar measurements. Estimated parameters are x position, y position, velocity in x, velocity in y. The lidar measurements are in red, radar measurements in blue, and predicted state in green.
 
-#### Path 1
-<p align="center" font-weight="bold">
+<h4 align="center">Path 1</h4>
+<p align="center">
 <image src="./result1.gif">
 </p>
  
-#### Path 2
-<p align="center" font-weight="bold">
+<h4 align="center">Path 2</h4>
+<p align="center">
 <image src="./result2.gif">
 </p>
 
-### Steps
+### Technical Details
 
-**INPUT**: values provided by the simulator to the c++ program\
-["sensor_measurement"] => the measurement that the simulator observed (either lidar or radar)
+Kalman filter and extended Kalman filter fused the measurements from both radar and lidar together through a prediction measurement cycle. Knowing the state of the vehicle, kinematic formula is able to predict the future state of the car given elapse time. Then with the noise given of both lidar and radar, the measurements from both sensors would be used to future update the predicted state and use it for the next prediction. 
 
-**OUTPUT**: values provided by the c++ program to the simulator\
-["estimate_x"] <= kalman filter estimated position x\
-["estimate_y"] <= kalman filter estimated position y\
-["rmse_x"] <= root mean squared error between estimation and ground truth of x\
-["rmse_y"] <= root mean squared error between estimation and ground truth of y\
-["rmse_vx"] <= root mean squared error between estimation and ground truth of vx\
-["rmse_vy"] <= root mean squared error between estimation and ground truth of vy\
+The extended Kalman filter is used for the radar update while normal Kalman filter is used for the lidar update, "extended" makes it mathematically more rigorous with the use of taylor expansion and jacobian matrix. However, the idea of updating measurement is the same.
+
+**Input**: values provided by the simulator to the c++ program\
+["sensor_measurement"]  =>  the measurement that the simulator observed (either lidar or radar)
+
+**Output**: values provided by the c++ program to the simulator\
+["estimate_x"]  <=  kalman filter estimated position x\
+["estimate_y"]  <=  kalman filter estimated position y\
+["rmse_x"]  <=  root mean squared error between estimation and ground truth of x\
+["rmse_y"]  <=  root mean squared error between estimation and ground truth of y\
+["rmse_vx"]  <=  root mean squared error between estimation and ground truth of vx\
+["rmse_vy"]  <=  root mean squared error between estimation and ground truth of vy
 
 ### Success Criteria
 
