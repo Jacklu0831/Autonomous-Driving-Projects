@@ -50,6 +50,9 @@ The project is written in jupyter notebook. If you are interested, give [this fi
 - Reduce the skew toward driving straight by reducing the cases of steering angle with 0 to 200
 
 **Neural Network**
+<p align="center">
+<image src="https://devblogs.nvidia.com/parallelforall/wp-content/uploads/2016/08/cnn-architecture-624x890.png" width="50%" height="50%" alt="link broken"></p>
+  
 - Network architecture is the aforementioned NVIDIA paper in which they tackle the same problem of steering angle direction. Please refer to [this link](https://devblogs.nvidia.com/deep-learning-self-driving-cars/) for a blog of their research.
 - The input is normalized and ELU is chosen instead of ReLU to mitigate the effect of neuron deaths
 - The convolutional layers were followed by 3 fully-connected layers and a single neuron regressing to the correct steering angle value
