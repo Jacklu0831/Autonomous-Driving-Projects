@@ -6,9 +6,9 @@ import sys
 
 
 ap = argparse.ArgumentParser()
-ap.add_argument("-i", "--input", required=True,
+ap.add_argument("-i", "--input", required = True,
 	help="path to video input")
-ap.add_argument("-o", "--output", required=True,
+ap.add_argument("-o", "--output", required = True,
 	help="path to video output")
 args = vars(ap.parse_args())
 
@@ -16,7 +16,7 @@ args = vars(ap.parse_args())
 def canny(image):
 	# computes a lot of gradients and output the big ones with white pixels
 	gray = cv2.cvtColor(image, cv2.COLOR_RGB2GRAY)
-	blur = cv2.GaussianBlur(gray, (5,5), 0)
+	blur = cv2.GaussianBlur(gray, (5, 5), 0)
 	canny = cv2.Canny(blur, 50, 150)
 	return canny
 
@@ -24,7 +24,7 @@ def canny(image):
 def region_of_interest(image):
 	# define the area that we are interested in and crop the part out
 	height = image.shape[0]
-	polygons = np.array([[[200,height],[1100,height],[550,250]]]) # triangle
+	polygons = np.array([[[200, height],[1100, height],[550, 250]]]) # triangle
 	mask = np.zeros_like(image)
 	cv2.fillPoly(mask, polygons, (255,255,255))
 	masked_image = cv2.bitwise_and(image, mask)
@@ -51,8 +51,8 @@ def average_slope_intercept(image, lines, left_fit_prev, right_fit_prev):
 	if not len(right_fit):
 		right_fit = right_fit_prev
 
-	left_fit_average  = np.average(left_fit, axis=0)
-	right_fit_average = np.average(right_fit, axis=0)
+	left_fit_average  = np.average(left_fit, axis = 0)
+	right_fit_average = np.average(right_fit, axis = 0)
 	left_fit_prev = left_fit
 	right_fit_prev = right_fit
 	left_line  = make_coordinates(image, left_fit_average)
@@ -64,9 +64,9 @@ def average_slope_intercept(image, lines, left_fit_prev, right_fit_prev):
 def make_coordinates(image, line_parameters):
 	slope, intercept = line_parameters
 	y1 = image.shape[0] # both lines start from y1 bottom to 60% up
-	y2 = int(y1*0.6)
-	x1 = int((y1-intercept)/slope) # x = (y-b)/m
-	x2 = int((y2-intercept)/slope)
+	y2 = int(y1 * 0.6)
+	x1 = int((y1 - intercept) / slope) # x = (y-b)/m
+	x2 = int((y2 - intercept) / slope)
 	return np.array([x1,y1,x2,y2])
 
 
@@ -76,7 +76,7 @@ def display_lines(image, lines):
 	if lines is not None:
 		for line in lines:
 			x1,y1,x2,y2 = line
-			cv2.line(line_image, (x1,y1), (x2,y2), (255,0,0), 10) # 10 is thickness
+			cv2.line(line_image, (x1, y1), (x2, y2), (255, 0, 0), 10) # 10 is thickness
 	return line_image
 
 
@@ -96,7 +96,7 @@ while(video_stream.isOpened()):
 	cropped_image = region_of_interest(canny_image)
 	# specify bin sizes, 2 pixels and 1 degree in radian, and threshold of 100, empty array as place holder
 	# only line > 40 are lines and only points less than 5 pixels apart can be connected
-	lines = cv2.HoughLinesP(cropped_image, 2, np.pi/180, 100, np.array([]), minLineLength=40, maxLineGap=5)
+	lines = cv2.HoughLinesP(cropped_image, 2, np.pi / 180, 100, np.array([]), minLineLength = 40, maxLineGap = 5)
 	average_lines, left_fit_prev, right_fit_prev = average_slope_intercept(frame, lines, left_fit_prev, right_fit_prev)
 	line_image = display_lines(frame, average_lines)
 	# why the background is black, 80% intensity of lane_image and 100% for line_image and add 0 to all pixel

@@ -25,9 +25,9 @@ speed_limit = 10
 def img_preprocess(img):
     img = img[60:135, :, :]
     img = cv2.cvtColor(img, cv2.COLOR_RGB2YUV) # yuv is better for neural
-    img = cv2.GaussianBlur(img, (3,3), 0)
+    img = cv2.GaussianBlur(img, (3, 3), 0)
     img = cv2.resize(img, (200, 66)) # less computationally expensive and matches the neural cfg
-    img = img/255.0
+    img = img / 255.0
     return img
 
 

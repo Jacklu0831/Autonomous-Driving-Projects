@@ -108,6 +108,5 @@ int main() {
     std::cerr << "Failed to listen to port" << std::endl;
     return -1;
   }
-  
   h.run();
 }

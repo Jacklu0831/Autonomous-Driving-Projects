@@ -227,11 +227,7 @@ string ParticleFilter::getAssociations(Particle best) {
 string ParticleFilter::getSenseCoord(Particle best, string coord) {
   vector<double> v;
 
-  if (coord == "X") {
-    v = best.sense_x;
-  } else {
-    v = best.sense_y;
-  }
+  v = coord == "X" ? best.sense_x : best.sense_y;
 
   std::stringstream ss;
   copy(v.begin(), v.end(), std::ostream_iterator<float>(ss, " "));
