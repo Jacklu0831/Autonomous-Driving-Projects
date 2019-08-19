@@ -8,7 +8,7 @@
 
 Modified the simple convolutional neural network architecture [LeNet](http://yann.lecun.com/exdb/publis/pdf/lecun-98.pdf) to recognize traffic signs in various angles and lightings. Due to non-evenly distributed dataset for each type of traffic sign, image augmentaion was heavily used to combat overfitting. For more advanced CNN implementations such as YOLO or SSD by me, refer to [INSERT PROJECTS].
 
-### Pipeline
+### Procedure
 
 The source code is written in Jupyter Notebook, please refer to [this](TrafficSignRecognizer.ipynb) for a more graphical presentation of the process.
 - Load a data set of labeled traffic signs

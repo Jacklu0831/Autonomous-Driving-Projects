@@ -10,21 +10,21 @@ A number of autonomous vehicle projects I coded along with the [Udacity Self Dri
       <p align="center">
            <a><img src="./1_Finding_Lane_Lines/result.gif" alt="Overview" width="80%" height="80%"></a>
            <br>Finding Lane Lines
-           <br><a href="./1_Finding_Lane_Lines">Code</a>
+           <br><a href="./1_Finding_Lane_Lines">Details</a>
       </p>
     </th>
     <th>
       <p align="center">
          <a><img src="./2_Advanced_Lane_Finding/result.gif" alt="Overview" width="80%" height="80%"></a>
          <br>Advanced Lane Finding
-         <br><a href="./2_Advanced_Lane_Finding">Code</a>
+         <br><a href="./2_Advanced_Lane_Finding">Details</a>
       </p>
     </th>
     <th width="33.3%">
         <p align="center">
          <a><img src="./4_SSD_Object_Detection/result.gif" alt="Overview" width="80%" height="80%"></a>
          <br>SSD Object Detection
-         <br><a href="./4_SSD_Object_Detection">Code</a>
+         <br><a href="./4_SSD_Object_Detection">Details</a>
       </p>
     </th>
   </tr>
@@ -33,21 +33,21 @@ A number of autonomous vehicle projects I coded along with the [Udacity Self Dri
     <th><p align="center">
            <a><img src="./3_Traffic_Sign_Classifier/result.png" alt="Overview" width="65.75%" height="65.75%"></a>
            <br>Traffic Sign Classifier
-           <br><a href="./3_Traffic_Sign_Classifier">Code</a>
+           <br><a href="./3_Traffic_Sign_Classifier">Details</a>
         </p>
     </th>
     <th width="33.3%">
       <p align="center">
            <a><img src="./5_Behavioral_Cloning/output_gif/Track1_with_Aug.gif" alt="Overview" width="80%" height="80%"></a>
            <br>Behavioral Cloning
-           <br><a href="./5_Behavioral_Cloning">Code</a>
+           <br><a href="./5_Behavioral_Cloning">Details</a>
         </p>
     </th>
     <th width="33.3%">
           <p align="center">
            <a><img src="./6_Extended_Kalman_Filter/result1.gif" alt="Overview" width="80%" height="80%"></a>
            <br>Extended Kalman Filter
-           <br><a href="./6_Extended_Kalman_Filter">Code</a>
+           <br><a href="./6_Extended_Kalman_Filter">Details</a>
         </p>
     </th>
   </tr>
@@ -56,21 +56,21 @@ A number of autonomous vehicle projects I coded along with the [Udacity Self Dri
       <p align="center">
            <a><img src="./7_Particle_Filter/result.gif" alt="Overview" width="80%" height="80%"></a>
            <br>Particle Filter
-           <br><a href="./7_Particle_Filter">Code</a>
+           <br><a href="./7_Particle_Filter">Details</a>
         </p>
     </th>
     <th width="33.3%">
       <p align="center">
            <a><img src="./8_PID_Controller/result.gif" alt="Overview" width="80%" height="80%"></a>
            <br>PID Controller
-           <br><a href="./8_PID_Controller">Code</a>
+           <br><a href="./8_PID_Controller">Details</a>
         </p>
     </th>
     <th width="33.3%">
           <p align="center">
            <a><img src="./9_Path_Planning/result.gif" alt="Overview" width="80%" height="80%"></a>
            <br>Path Planning
-           <br><a href="./9_Path_Planning">Code</a>
+           <br><a href="./9_Path_Planning">Details</a>
         </p>
     </th>
   </tr>

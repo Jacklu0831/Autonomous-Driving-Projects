@@ -39,7 +39,7 @@ Without image augmentation, the neural network does not have enough training dat
 
 The goal of this project is to train the [NVIDIA neural network](https://arxiv.org/pdf/1604.07316v1.pdf) to replicate human steering behavior while driving. It takes three pictures from camera: roof center, roof left, and roof right as input data. I first drove the vehicle myself in the training mode, then deployed the trained model in the autonomous mode to qualitatively measure the output performance. The car is able to steer not only on the road it was trained on, but also track 2 of the Udacity simulator. 
 
-### Pipeline
+### Procedure
 
 The project is written in jupyter notebook. If you are interested, give [this file](BehavioralCloningwithAug.ipynb) a visit to see more visualization of the process.
 
