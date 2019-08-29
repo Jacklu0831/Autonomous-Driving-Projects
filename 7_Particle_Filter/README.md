@@ -6,7 +6,7 @@
 
 ### Summary
 
-In this project, my vehicle has been kidnapped. However, with noisy GPS data (initial positional estimation), sensors (lidar+radar), and a built-in map, I was able to use a 2D particle filter technique and localize my car within centimeters. 
+In this project, my vehicle has been kidnapped in a simulated environment. However, with estimated GPS position, lidar sensor, radar sensor, and a built-in map, I was able to use use the 2D particle filter algorithm to localize my car within centimeters.
 
 ### Technical Details
 

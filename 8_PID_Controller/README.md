@@ -6,7 +6,7 @@
 
 ### Summary
 
-Programmed a basic PID (proportional integral derivative) mechanism to make a car drive itself on a simulated road with curves. This is a model-based approach to behavior cloning, which is a more data-based approach. However, this control loop feedback cycle still does quite well on staying on the lane. Despite thrust of the vehicle is programmed to be constant even when is it on curves, the vehicle is very good at always keeping itself on the track.
+Programmed a basic PID (proportional integral derivative) mechanism to make a car drive itself on a simulated road with curves. While Behavior cloning is a data-based approach to steer prediction, this is a model-based approach. However, this control loop feedback cycle still does very well on staying on driving itself. Despite thrust of the vehicle is programmed to be constant even when is it on curves, the vehicle is very good at always keeping itself on the track.
 
 ### Pipeline / Technical Detail
 

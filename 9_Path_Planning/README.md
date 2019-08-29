@@ -5,7 +5,7 @@
       </p>
 
 ### Summary
-Use path planning to program a simulated vehicle that safely navigates around a virtual highway driving at +-10 MPH of the 50 MPH speed limit. The car is able to receive localization, sensor fusion data (lidar, radar, GPS), and a built in map of waypoints. 
+Program a simulated vehicle that safely navigates around a virtual highway driving at +-10 MPH of the 50 MPH speed limit. The car is able to receive localization, sensor fusion data (lidar, radar, GPS), and a built in map of waypoints. Used behavioral planner, trajectory generation, trajectory cost ranking algorithms.  
 
 ### Success Criteria
 - Stay close to the speed limit without exceeding it
