@@ -6,7 +6,7 @@
 
 ### Summary
 
-Created a simple pipeline to detect road lines from a roof-mounted camera. No neural network was involved with this project and the straight lines do a poor job detecting curved lines. Refer to [INSERT PROJECT] for a more advanced pipeline that detects curvature and maps out curved lanes. 
+Created a simple pipeline to detect road lines from a roof-mounted camera. No neural network was involved with this project and the straight lines do a poor job detecting curved lines. Refer to [this continuation](https://github.com/Jacklu0831/Self-Driving-Car/tree/master/2_Advanced_Lane_Finding) for a more advanced pipeline that detects curvature and maps out curved lanes. 
 
 ### Pipeline
 

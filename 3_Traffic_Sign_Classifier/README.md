@@ -6,7 +6,7 @@
 
 ### Summary
 
-Modified the simple convolutional neural network architecture [LeNet](http://yann.lecun.com/exdb/publis/pdf/lecun-98.pdf) to recognize traffic signs in various angles and lightings. Due to non-evenly distributed dataset for each type of traffic sign, image augmentaion was heavily used to combat overfitting. For more advanced CNN implementations such as YOLO or SSD by me, refer to [INSERT PROJECTS].
+Modified the simple convolutional neural network architecture [LeNet](http://yann.lecun.com/exdb/publis/pdf/lecun-98.pdf) to recognize traffic signs in various angles and lightings. Due to non-evenly distributed dataset for each type of traffic sign, image augmentaion was heavily used to combat overfitting. 
 
 ### Pipeline
 

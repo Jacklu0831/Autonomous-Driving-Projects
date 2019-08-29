@@ -8,7 +8,7 @@
 
 Created a more complex pipline to detect road lines from a roof-mounted camera. The result not only detects the curved lane in real time, but also calculates the lane's curvature radius how off-center the car is (very useful data for autonomous driving). 
 
-Despite the satisfying result shown above, the algorithm does not perform well with strong glare or obstacles. This is why CNN architectures ultimately needs to be employed. Here are my CNN related projects: [INSERT PROJECTS].
+Despite the satisfying result shown above, the algorithm does not perform well with strong glare or obstacles. This is why CNN architectures ultimately needs to be employed. Poke around my repos to find quite a few of CNN related projects.
 
 ### Pipeline
 
